@@ -11,7 +11,8 @@ What follows is the projects I worked on during my time there.
 
 The original CANView was a vehicle display that would take messages from the CAN bus and provide the user with information about the vehicle, in addition to providing the capbility to manage other aspects of the car depending on customer needs. This includes brake lights, suspension controllers and our custom hydrostatic transmission controller.
 
-
+We had tight deadline restrictions, so I implemented a modular software structure that let myself and a senior engineer work on the project simultaneously.
+I mainly focused on the user interface.
 
 ### Fluvia RC3X
 *Sector: Hydrology*
@@ -33,14 +34,17 @@ I also spent a large amoutn of time working on digital sampling and filtering to
 
 [Fluvia RC3](https://www.aqua-data.com/fluvia-rc3)
 
+### RV4X
 
+The RV4X is the probe that connects to the RC3, which contains the electrodes and the first stage of amplification. 
+I was involved in looking at making improvements to the electrical side of the probe. Looking at magnetic effects
 
 
 ### Automotive Configurator
 *Sector: Automotive*
 
 ### KowoLed Bright-Spot Non-Destructive Testing Viewer
-*Sector:: Civil and Mechanical Engineering*
+*Sector: Civil and Mechanical Engineering*
 
 The KowoLed Bright-Spot is a high-intensity lightbox used for inspecting x-ray film for non-destructive testing.
 
@@ -52,6 +56,9 @@ I worked on the software for the master controller which managed the other 5 con
 
 [KowoLed Bright-Spot](http://www.ie-ndt.co.uk/brightspot.html)
 
+![image](https://github.com/user-attachments/assets/2a233b8f-054c-4d2e-82c5-915f073e739f)
+
+
 ## Oxford Uni Racing (Formula Student)
 In my first year at university, I joined the team as an electronics team member, as I had a large amount of experience with this kind of work.
 
@@ -60,5 +67,10 @@ This was a master system that connected to the CAN bus and coordinated informati
 
 In June 2023 we took the car to Silverstone where we passed electrical scrutineering for the first time.
 
-In my second year, I was Chief of Electronics, where I managed
+In my second year, I was Chief of Electronics, where I developed a small team's technical skills to be able to effectively work on the car. Unfortunately due to our welding being postponed, the car was not finished or tested before the competition.
+
+In my thrid (current) year, I've continued on as Chief of Electronics, where I am pushing for a complete hardware re-design, with a focus on reliablility. 
+
+![FS1](https://github.com/user-attachments/assets/3a37b0f9-7a89-464b-a3f5-c12747dc4045) ![FS2](https://github.com/user-attachments/assets/ad1223be-dbba-4b7d-860a-395628357d87) 
+![FS3](https://github.com/user-attachments/assets/5a729187-9930-40f5-b807-faed4a753ba3)
 
