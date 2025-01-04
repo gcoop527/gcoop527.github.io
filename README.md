@@ -14,7 +14,6 @@ The original CANView was a vehicle display that would take messages from the CAN
 We had tight deadline restrictions, so I implemented a modular software structure that let myself and a senior engineer work on the project simultaneously.
 I mainly focused on the user interface.
 
-![image](https://github.com/user-attachments/assets/a42054f0-069d-4e58-807e-9972dc5985a0)
 
 
 ### Fluvia RC3X
@@ -32,22 +31,26 @@ This included:
 - 7500 lines of C code
 - 2 Processor system communication via UART
 - Creating a multi-purpose graphics controller board, with a custom hardware and middlewear abstraction layers
+  - Within this I created a graphics library to be used in-house
 
 I also spent a large amount of time working on digital sampling and filtering to replace the current analogue system. This invovled utisilising the DSP features of the dsPICs, which goes down to optimising the assemble. 
 While this wasn't used on this iteration of the product, it sets up a base for when we would want to significantly shrink the package size.
 
 [Fluvia RC3](https://www.aqua-data.com/fluvia-rc3)
 
+![image](https://github.com/user-attachments/assets/a42054f0-069d-4e58-807e-9972dc5985a0)
+
 ### RV4X
 
 The RV4X is the probe that connects to the RC3, which contains the electrodes and the first stage of amplification. 
-I was involved in looking at making improvements to the electrical side of the probe. 
 
-This involved 
-
+The potential on the electrodes is of ther oder of 100nV, with an impedance of ~10-500kΩ, which requires some precision amplification. 
+This combined with strong, switching magnetic fields results in a complex problem to solve.
 
 ### Automotive Configurator
 *Sector: Automotive*
+
+
 
 ### KowoLed Bright-Spot Non-Destructive Testing Viewer
 *Sector: Civil and Mechanical Engineering*
@@ -75,7 +78,7 @@ In June 2023 we took the car to Silverstone where we passed electrical scrutinee
 
 In my second year (23-24), I was Chief of Electronics, where I developed a small team's technical skills to be able to effectively work on the car. 
 We had a goal to pass electrical scrutineering again with a minimal budget. This led to a focus on making software improvements, as well as integrating and tuning our new Sevcon GEN4 inverters. 
-Unfortunately due to our welding being significantly delayed, the car was not finished or tested before the competition.
+Unfortunately our chasis welding was signficiantly delayed, and despite our best efforts to work on the car, we could not finish it in time for the competition.
 
 In my thrid (current) year, I've continued on as Chief of Electronics, where I am managing a complete hardware re-design, with a focus on reliablility.
 My goal for the year is to pass electrical scrutineering with flying colours, and have our electronics package last us the next 2-3 years. 
@@ -90,7 +93,7 @@ This includes:
 - Complete re-design of our harness using EPLAN.
   - Previous years harness has been, to be honest, poor.
   - Focus on investing in the right tools to do it properly.
-- Focus on next years major decision decision involving powertrain and battery options
+- Focus on next years major design choices involving powertrain and battery options
 
 ![FS1](https://github.com/user-attachments/assets/3a37b0f9-7a89-464b-a3f5-c12747dc4045) ![FS2](https://github.com/user-attachments/assets/ad1223be-dbba-4b7d-860a-395628357d87) 
 ![FS3](https://github.com/user-attachments/assets/5a729187-9930-40f5-b807-faed4a753ba3)
