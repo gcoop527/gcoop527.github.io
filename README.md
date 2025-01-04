@@ -11,10 +11,8 @@ What follows are the projects I worked on during my time there.
 
 The original CANView was a vehicle display that would take messages from the CAN bus and provide the user with information about the vehicle, in addition to providing the capbility to manage other aspects of the car depending on customer needs. This includes brake lights, suspension controllers and our custom hydrostatic transmission controller.
 
-We had tight deadline restrictions, so I implemented a modular software structure that let myself and a senior engineer work on the project simultaneously.
-I mainly focused on the user interface.
-
-
+We had tight deadline restrictions, so I implemented a modular software structure which allowed myself to work on the user interface, and a senior engineer to work on the HAL and mid-layer, independently.
+This was crucial as we only had 2 weeks before visiting the client on site to finish developing the software.
 
 ### Fluvia RC3X
 *Sector: Hydrology*
@@ -32,6 +30,7 @@ This included:
 - 2 Processor system communication via UART
 - Creating a multi-purpose graphics controller board, with a custom hardware and middlewear abstraction layers
   - Within this I created a graphics library to be used in-house
+- Designed a GPS daughter board extension
 
 I also spent a large amount of time working on digital sampling and filtering to replace the current analogue system. This invovled utisilising the DSP features of the dsPICs, which goes down to optimising the assemble. 
 While this wasn't used on this iteration of the product, it sets up a base for when we would want to significantly shrink the package size.
@@ -47,10 +46,28 @@ The RV4X is the probe that connects to the RC3, which contains the electrodes an
 The potential on the electrodes is of ther oder of 100nV, with an impedance of ~10-500kΩ, which requires some precision amplification. 
 This combined with strong, switching magnetic fields results in a complex problem to solve.
 
+I developed a SPICE simulation of the system and was able to replicate the anomalies we were observing by considering the magnetic effects.
+Then I produced multiple test PCBs to look at ways of reducing these effects.
+
+I found a solution to the problem through these tests. The next step is to conduct further long-term testing, in different conditions, on this new design.
+
+### HTC Controller
+
+The company's backbone used to be based on hydrostatic transmission controllers. The goal of this project was to create a generic controller that we could use in a range of sectors from agriculture to aircraft ground support.
+
+During one of my shorter placements, I implemented the HAL and middle-layer to create a "shell" code for the application specific control to be added onto.
+This shell code would then properly handle hardware changes, and bug fixes, that could be sent to update all vehicles using this controller, independent of the application. 
+
 ### Automotive Configurator
 *Sector: Automotive*
 
+For the [HTC Controller](#htc-controller), The control code uses up to a hundred parameters to determine the drive characteristics, which need to be tuned. 
+This would typically require one of our engineers to go down on sight to make changes.
+A user requested to have a way of doing this without having to get more engineers to come down, so I was asked to develop a touch-screen device that would allow the user to adjust these values themself.
 
+This device had an intuitive interface, and could configure our controllers over either RS232, RS485 or CAN, all configurable.
+As this could be used on a variety of applications, I developed a generic protocol / storage solution that would let the user have descriptions for each parameter.
+It also had capacity to save and load configurations, which could then be uploaded over serial to a computer. 
 
 ### KowoLed Bright-Spot Non-Destructive Testing Viewer
 *Sector: Civil and Mechanical Engineering*
