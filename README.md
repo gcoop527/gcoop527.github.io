@@ -3,7 +3,7 @@
 ## Control Developments
 I worked for Control Developments as a student electronics engineer from June 2021 - September 2022, as well as 8 weeks throughout 2023 and another 8 weeks throughout 2024.
 
-What follows is the projects I worked on during my time there.
+What follows are the projects I worked on during my time there.
 
 
 ### CANView II
