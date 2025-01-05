@@ -28,7 +28,7 @@ Due to the major component shortage following COVID, I led a complete, independe
 This included:
 - Eliminating the need for a single-source battery, allowing for 20% extended battery capacity
 - Increasing velocity refresh rate from 1Hz to 10Hz due to software optimisations
-- 7500 lines of C code
+- 10k lines of C code
 - 2 Processor system communication via UART
 - Creating a multi-purpose graphics controller board, with a custom hardware and middlewear abstraction layers
   - Within this I created a graphics library to be used in-house
