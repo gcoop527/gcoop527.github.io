@@ -96,7 +96,7 @@ This was a master system that connected to the CAN bus and coordinated informati
 In June 2023 we took the car to Silverstone where we passed electrical scrutineering for the first time.
 
 In my second year (23-24), I was Chief of Electronics, where I developed a small team's technical skills to be able to effectively work on the car. 
-We had a goal to pass electrical scrutineering again with a minimal budget. This led to a focus on making software improvements, as well as integrating and tuning our new Sevcon GEN4 inverters. 
+We had a goal to pass electrical scrutineering again with a minimal budget. This led to a focus on making software improvements, as well as integrating and tuning our new Sevcon Gen4 inverters. 
 Unfortunately our chasis welding was signficiantly delayed, and despite our best efforts to work on the car, we could not finish it in time for the competition.
 
 In my thrid (current) year, I've continued on as Chief of Electronics, where I am managing a complete hardware re-design, with a focus on reliablility.
@@ -110,7 +110,7 @@ This includes:
   - Light system to display if the car is in a safe state or not
 - New LV board within our battery
 - Complete re-design of our harness using EPLAN.
-  - Previous years harness has been, to be honest, poor.
+  - Previous years harness was, to be honest, poor.
   - Focus on investing in the right tools to do it properly.
 - Focus on next years major design choices involving powertrain and battery options
 
