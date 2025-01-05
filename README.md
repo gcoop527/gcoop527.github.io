@@ -14,6 +14,8 @@ The original CANView was a vehicle display that would take messages from the CAN
 We had tight deadline restrictions, so I implemented a modular software structure which allowed myself to work on the user interface, and a senior engineer to work on the HAL and mid-layer, independently.
 This was crucial as we only had 2 weeks before visiting the client on site to finish developing the software.
 
+We also had a requirement to make the display compatible with night vision gogles, such that the display would not blind a user wearing them. 
+
 ### Fluvia RC3X
 *Sector: Hydrology*
 
