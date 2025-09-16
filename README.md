@@ -99,9 +99,10 @@ In my second year (23-24), I was Chief of Electronics, where I developed a small
 We had a goal to pass electrical scrutineering again with a minimal budget. This led to a focus on making software improvements, as well as integrating and tuning our new Sevcon Gen4 inverters. 
 Unfortunately our chasis welding was signficiantly delayed, and despite our best efforts to work on the car, we could not finish it in time for the competition.
 
-In my thrid (current) year, I've continued on as Chief of Electronics, where I am managing a complete hardware re-design, with a focus on reliablility.
-My goal for the year is to pass electrical scrutineering with flying colours, and have our electronics package last us the next 2-3 years. 
-This includes:
+In my thrid  year, I've continued on as Chief of Electronics, where I am managing a complete hardware re-design, with a focus on reliablility.
+I also stepped up to take on the role of Head Electrical Safety where I recieved formal HV training.
+Our technical goals for the year were to create a reliable base for electronics that can pass scrutineering with flying colours. 
+This included:
 - Custom vehicle control unit
   - Multiple PWM output, Multiple Generic IO, 2x CAN, RS232 for diagnostic
   - Using STM32F446RC
@@ -114,6 +115,23 @@ This includes:
   - Focus on investing in the right tools to do it properly.
 - Focus on next years major design choices involving powertrain and battery options
 
-![FS1](https://github.com/user-attachments/assets/3a37b0f9-7a89-464b-a3f5-c12747dc4045) ![FS2](https://github.com/user-attachments/assets/ad1223be-dbba-4b7d-860a-395628357d87) 
+This was all achieved and our car managed to compete in dynamic for the first time in Oxford Uni Racing history.
+
+
+For my fourth year, I have taken on the role of technical manager, where I now manage all electrical subteams which cover ~25 engineers.
+We decided at the start of last year that we wanted to do a complete overall from our previous car which includes:
+- Increase battery voltage to ~400V
+- New powertrain setup that will allow us to run at 80kW peak and 40kW continous for the entirety of endurance
+- Decrease car weight from 360kg to 250kg
+To achieve these, we are doing a complete redesign of our battery, new powertrain with a sponsorship from YASA motors, and a new chasis.
+
+My main focus is leading the new battery design, and working on powertrain integration with the LV electronics. Specifically:
+- Created full vehicle sim to give accurate design goals for the car
+- Model and develop traction control app
+- Managing full battery design
+
+
+![FS1](https://github.com/user-attachments/assets/3a37b0f9-7a89-464b-a3f5-c12747dc4045) 
+![FS2](https://github.com/user-attachments/assets/ad1223be-dbba-4b7d-860a-395628357d87) 
 ![FS3](https://github.com/user-attachments/assets/5a729187-9930-40f5-b807-faed4a753ba3)
 
